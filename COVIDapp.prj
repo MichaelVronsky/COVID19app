@@ -1,9 +1,14 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
   <configuration file="C:\Users\Michael Vronsky\Files\Private\Projects\COVID19 Data\COVID19app\COVIDapp.prj" location="C:\Users\Michael Vronsky\Files\Private\Projects\COVID19 Data\COVID19app" name="COVIDapp" preferred-package-location="C:\Users\Michael Vronsky\Files\Private\Projects\COVID19 Data\COVID19app\COVIDapp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>COVID19app</param.appname>
-    <param.icon />
-    <param.icons />
-    <param.version>1.0</param.version>
+    <param.icon>${PROJECT_ROOT}\COVIDapp_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\COVIDapp_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\COVIDapp_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\COVIDapp_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\COVIDapp_resources\icon_16.png</file>
+    </param.icons>
+    <param.version>1.0.1</param.version>
     <param.authnamewatermark>Michael Vronsky</param.authnamewatermark>
     <param.email>michaelvronsky@berkeley.edu</param.email>
     <param.company />
@@ -43,9 +48,6 @@
 	 -?  print help on how to use the application 
 	 input arguments</param.help.text>
     <unset>
-      <param.icon />
-      <param.icons />
-      <param.version />
       <param.company />
       <param.summary />
       <param.description />
